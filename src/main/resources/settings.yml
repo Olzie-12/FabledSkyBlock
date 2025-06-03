@@ -29,6 +29,7 @@ Settings:
         Milking: false
         Jukebox: false
         Cauldron: false
+        Crafter: false
         PressurePlate: false
         Redstone: false
         Shearing: false
@@ -61,6 +62,7 @@ Settings:
         Brewing: true
         Bucket: true
         Cauldron: true
+        Crafter: true
         WaterCollection: true
         Storage: true
         Workbench: true
@@ -133,6 +135,7 @@ Settings:
         Door: true
         Gate: true
         Cauldron: true
+        Crafter: true
         Projectile: true
         Enchant: true
         Fire: true

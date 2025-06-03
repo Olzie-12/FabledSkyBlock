@@ -3,7 +3,7 @@ description: ${project.description}
 version: ${project.version}
 api-version: 1.13
 
-main: com.craftaro.skyblock.SkyBlock
+main: com.songoda.skyblock.SkyBlock
 softdepend:
   - CMIEInjector
   - CoreProtect
@@ -20,7 +20,7 @@ softdepend:
 loadbefore:
   - Multiverse-Core
 
-author: Craftaro
+author: Songoda
 authors: [ Fabrimat ]
 website: ${project.url}
 

@@ -3641,12 +3641,12 @@ Island:
 Hologram:
   Leaderboard:
     Votes:
-      Footer: '&ecraftaro.com'
+      Footer: '&esongoda.com'
       Claimed: '&8* &f&o[%position] &a%player &7- &6%votes'
       Unclaimed: '&8* &f&o[%position] &7&oUnclaimed Position'
       Header: '&b&lSkyBlock &8&l| &e&lTop 10 Votes'
     Bank:
-      Footer: '&ecraftaro.com'
+      Footer: '&esongoda.com'
       Unclaimed: '&8* &f&o[%position] &7&oUnclaimed Position'
       Claimed: '&8* &f&o[%position] &a%player &7- &6$%balance'
       Header: '&b&lSkyBlock &8&l| &e&lTop 10 Bank Balances'
@@ -3654,7 +3654,7 @@ Hologram:
       Header: '&b&lSkyBlock &8&l| &e&lTop 10 Level'
       Claimed: '&8* &f&o[%position] &a%player &7- &6%level'
       Unclaimed: '&8* &f&o[%position] &7&oUnclaimed Position'
-      Footer: '&ecraftaro.com'
+      Footer: '&esongoda.com'
   Stackable:
     Message: '%blocks: %amount'
 Challenge:
