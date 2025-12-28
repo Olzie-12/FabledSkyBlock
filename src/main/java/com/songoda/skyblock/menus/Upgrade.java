@@ -3,6 +3,7 @@ package com.songoda.skyblock.menus;
 import com.songoda.core.compatibility.MajorServerVersion;
 import com.songoda.core.compatibility.ServerVersion;
 import com.songoda.core.hooks.economies.Economy;
+import com.songoda.skyblock.utils.version.PotionUtils;
 import com.songoda.third_party.com.cryptomorin.xseries.XItemFlag;
 import com.songoda.third_party.com.cryptomorin.xseries.XMaterial;
 import com.songoda.third_party.com.cryptomorin.xseries.XPotion;
@@ -31,6 +32,7 @@ import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.potion.PotionData;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.bukkit.potion.PotionType;
 
 import java.util.List;
 
@@ -497,11 +499,11 @@ public class Upgrade {
                 if (upgrades != null && !upgrades.isEmpty() && upgrades.get(0).isEnabled()) {
                     com.songoda.skyblock.upgrade.Upgrade upgrade = upgrades.get(0);
 
-                    if (MajorServerVersion.isServerVersionAtLeast(MajorServerVersion.V1_9)) {
+                    if (MajorServerVersion.isServerVersionAtLeast(MajorServerVersion.V1_10)) {
                         PotionMeta pm = (PotionMeta) potion.getItemMeta();
 
                         if (MajorServerVersion.isServerVersionAtLeast(MajorServerVersion.V1_10)) {
-                            pm.setBasePotionData(new PotionData(XPotion.SPEED.getPotionType()));
+                            PotionUtils.setPotionData_V1_13(pm, XPotion.SPEED.getPotionType());
                         } else {
                             pm.addCustomEffect(new PotionEffect(PotionEffectType.SPEED, 1, 0), true);
                         }
@@ -555,7 +557,7 @@ public class Upgrade {
 
                         if (MajorServerVersion.isServerVersionAtLeast(MajorServerVersion.V1_9)) {
                             if (MajorServerVersion.isServerVersionAtOrBelow(MajorServerVersion.V1_20) && ServerVersion.isServerVersionBelow(ServerVersion.V1_20_6)) {
-                                pm.setBasePotionData(new PotionData(XPotion.JUMP_BOOST.getPotionType()));
+                                PotionUtils.setPotionData_V1_13(pm, XPotion.JUMP_BOOST.getPotionType());
                             } else {
                                 pm.setBasePotionType(XPotion.JUMP_BOOST.getPotionType());
                             }
